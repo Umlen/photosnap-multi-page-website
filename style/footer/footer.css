@@ -1,0 +1,43 @@
+footer {
+  background-color: #000000;
+}
+
+.share-icon {
+  cursor: pointer;
+}
+.share-icon stop {
+  transition: 0.4s ease;
+}
+.share-icon:hover #fb-gradient stop:first-child, .share-icon:focus #fb-gradient stop:first-child {
+  stop-color: #6367db;
+}
+.share-icon:hover #fb-gradient stop:last-child, .share-icon:focus #fb-gradient stop:last-child {
+  stop-color: #6028f1;
+}
+.share-icon:hover #yt-gradient stop:first-child, .share-icon:focus #yt-gradient stop:first-child {
+  stop-color: #d3205a;
+}
+.share-icon:hover #yt-gradient stop:last-child, .share-icon:focus #yt-gradient stop:last-child {
+  stop-color: #ff5a5a;
+}
+.share-icon:hover #tw-gradient stop:first-child, .share-icon:focus #tw-gradient stop:first-child {
+  stop-color: #65ffeb;
+}
+.share-icon:hover #tw-gradient stop:last-child, .share-icon:focus #tw-gradient stop:last-child {
+  stop-color: #27718a;
+}
+.share-icon:hover #pi-gradient stop:first-child, .share-icon:focus #pi-gradient stop:first-child {
+  stop-color: #f6c683;
+}
+.share-icon:hover #pi-gradient stop:last-child, .share-icon:focus #pi-gradient stop:last-child {
+  stop-color: #de3838;
+}
+.share-icon:hover #ig-gradient stop:first-child, .share-icon:focus #ig-gradient stop:first-child {
+  stop-color: #ffc593;
+}
+.share-icon:hover #ig-gradient stop:nth-child(2), .share-icon:focus #ig-gradient stop:nth-child(2) {
+  stop-color: #bc7198;
+}
+.share-icon:hover #ig-gradient stop:last-child, .share-icon:focus #ig-gradient stop:last-child {
+  stop-color: #5a77ff;
+}/*# sourceMappingURL=footer.css.map */

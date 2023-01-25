@@ -1,0 +1,56 @@
+footer {
+    background-color: #000000;
+}
+
+.share-icon {
+    cursor: pointer;
+    & stop {
+        transition: .4s ease;
+    }
+    &:hover,
+    &:focus {
+        #fb-gradient {
+            & stop:first-child {
+                stop-color: #6367db;
+            }
+            & stop:last-child {
+                stop-color: #6028f1;
+            }
+        }
+        #yt-gradient {
+            & stop:first-child {
+                stop-color: #d3205a;
+            }
+            & stop:last-child {
+                stop-color: #ff5a5a;
+            }
+        }
+        #tw-gradient {
+            & stop:first-child {
+                stop-color: #65ffeb;
+            }
+            & stop:last-child {
+                stop-color: #27718a;
+            }
+        }
+        #pi-gradient {
+            & stop:first-child {
+                stop-color: #f6c683;
+            }
+            & stop:last-child {
+                stop-color: #de3838;
+            }
+        }
+        #ig-gradient {
+            & stop:first-child {
+                stop-color: #ffc593;
+            }
+            & stop:nth-child(2) {
+                stop-color: #bc7198;
+            }
+            & stop:last-child {
+                stop-color: #5a77ff;
+            }
+        }
+    }
+}
