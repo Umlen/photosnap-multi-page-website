@@ -13,3 +13,41 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
 }
+
+/*LINKS*/
+
+.link-base-style {
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1.25em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.black-link {
+    color: #000000;
+}
+
+.menu-link { /*nav menu & footer menu*/
+    &:hover,
+    &:focus {
+        opacity: .3;
+    }
+}
+
+.call-to-action-link {
+    display: flex;
+    align-items: center;
+    & p {
+        margin: 0 22px 0 0;
+        @media (min-width: 700px) {
+            margin: 0 16px 0 0;
+        }
+    }
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}

@@ -11,4 +11,40 @@ html, body {
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
+}
+
+/*LINKS*/
+.link-base-style {
+  text-decoration: none;
+  font-size: 0.8em;
+  line-height: 1.25em;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.black-link {
+  color: #000000;
+}
+
+.menu-link { /*nav menu & footer menu*/ }
+.menu-link:hover, .menu-link:focus {
+  opacity: 0.3;
+}
+
+.call-to-action-link {
+  display: flex;
+  align-items: center;
+}
+.call-to-action-link p {
+  margin: 0 22px 0 0;
+}
+@media (min-width: 700px) {
+  .call-to-action-link p {
+    margin: 0 16px 0 0;
+  }
+}
+.call-to-action-link:hover, .call-to-action-link:focus {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

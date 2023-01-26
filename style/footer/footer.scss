@@ -1,9 +1,52 @@
-footer {
+.footer {
     background-color: #000000;
+    color: #ffffff;
+    padding: 56px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    @media (min-width: 700px) {
+        padding: 64px 40px;
+        grid-template-columns: 1fr 1fr;
+        justify-items: stretch;
+        gap: 32px;
+        grid-template-areas: "logo call-to-action"
+                             "footer-menu footer-menu"
+                             "share-icons copyright";
+    }
+    @media (min-width: 1280px) {
+        padding: 64px 165px 64px 170px;
+        gap: 0;
+        grid-template-columns: 280px 1fr 1fr;
+        grid-template-areas: "logo footer-menu call-to-action"
+                             "share-icons footer-menu copyright";
+    }
+}
+
+.footer-logo {
+    margin-bottom: 32px;
+    @media (min-width: 700px) {
+        grid-area: logo;
+        margin-bottom: 0;
+    }
+}
+
+.share-icons-wrapper {
+    margin-bottom: 49px;
+    @media (min-width: 700px) {
+        grid-area: share-icons;
+        margin-bottom: 0;
+    }
+    @media (min-width: 1280px) {
+        align-self: end;
+    }
 }
 
 .share-icon {
     cursor: pointer;
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
     & stop {
         transition: .4s ease;
     }
@@ -52,5 +95,58 @@ footer {
                 stop-color: #5a77ff;
             }
         }
+    }
+}
+
+.footer-menu {
+    padding: 0;
+    margin: 0 auto 119px;
+    list-style-type: none;
+    text-align: center;
+    & li:not(:last-child) {
+        margin-bottom: 19px;
+    }
+    @media (min-width: 700px) {
+        grid-area: footer-menu;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+        & li:not(:last-child) {
+            margin: 0 26px 0 0;
+        }
+    }
+    @media (min-width: 1280px) {
+        flex-direction: column;
+        text-align: left;
+        margin: 0;
+        & li:not(:last-child) {
+            margin: 0 0 19px 0;
+        }
+    }
+}
+
+.call-to-action-footer {
+    margin-bottom: 34px;
+    @media (min-width: 700px) {
+        grid-area: call-to-action;
+        justify-self: end;
+        margin-bottom: 0;
+    }
+    @media (min-width: 1280px) {
+        align-self: start;
+    }
+}
+
+.footer-copyright {
+    opacity: .5;
+    margin: 0;
+    @media (min-width: 700px) {
+        grid-area: copyright;
+        justify-self: end;
+        align-self: center;
+    }
+    @media (min-width: 1280px) {
+        align-self: end;
     }
 }
