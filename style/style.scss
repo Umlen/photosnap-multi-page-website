@@ -51,3 +51,16 @@ body {
         text-decoration: underline;
     }
 }
+
+/*BUTTONS*/
+
+.black-btn {
+    background-color: #000000;
+    padding: 14px 0;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: #dfdfdf;
+        color: #000000;
+    }
+}

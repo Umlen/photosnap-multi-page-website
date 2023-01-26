@@ -1,0 +1,36 @@
+.header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 24px;
+    position: relative;
+}
+
+.header-nav {
+    //display: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 32px;
+}
+
+.header-nav-menu {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    & li {
+        margin-bottom: 20px;
+    }
+}
+
+.header-nav-btn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}

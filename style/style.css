@@ -47,4 +47,15 @@ body {
 }
 .call-to-action-link:hover, .call-to-action-link:focus {
   text-decoration: underline;
+}
+
+/*BUTTONS*/
+.black-btn {
+  background-color: #000000;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.black-btn:hover, .black-btn:focus {
+  background-color: #dfdfdf;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
