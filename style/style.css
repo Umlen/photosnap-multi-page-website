@@ -58,4 +58,9 @@ body {
 .black-btn:hover, .black-btn:focus {
   background-color: #dfdfdf;
   color: #000000;
+}
+@media (min-width: 700px) {
+  .black-btn {
+    padding: 12px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -63,4 +63,7 @@ body {
         background-color: #dfdfdf;
         color: #000000;
     }
+    @media (min-width: 700px) {
+        padding: 12px 0;
+    }
 }
