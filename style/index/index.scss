@@ -1,0 +1,49 @@
+.section-container {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 700px) {
+        flex-direction: row;
+        align-items: center;
+        &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.black-section {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.white-section {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.section-text-wrapper {
+    padding: 72px 33px;
+    position: relative;
+    @media (min-width: 700px) {
+        padding: 0 54px;
+    }
+}
+
+.gradient-div {
+    position: absolute;
+    top: 0;
+    left: 33px;
+    height: 6px;
+    width: 128px;
+    background-image: linear-gradient(1deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    @media (min-width: 700px) {
+        left: 0;
+        height: 100%;
+        width: 6px;
+    }
+}
+
+.section-text {
+    line-height: 25px;
+    margin-bottom: 23px;
+    opacity: .6;
+}
