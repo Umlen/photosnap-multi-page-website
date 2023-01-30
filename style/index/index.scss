@@ -47,3 +47,44 @@
     margin-bottom: 23px;
     opacity: .6;
 }
+
+/*STORIES DIV*/
+
+.stories-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 375px;
+}
+
+.stories-div {
+    padding: 0 33px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.mountains-div {
+    background-image: url(/assets/stories/mobile/mountains.jpg);
+}
+
+.cityscapes-div {
+    background-image: url(/assets/stories/mobile/cityscapes.jpg);
+}
+
+.voyage-div {
+    background-image: url(/assets/stories/mobile/18-days-voyage.jpg);
+}
+
+.architecturals-div {
+    background-image: url(/assets/stories/mobile/architecturals.jpg);
+}
+
+.stories-text-wrapper {
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+
+.stories-call-to-action {
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
