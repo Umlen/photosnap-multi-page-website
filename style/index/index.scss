@@ -43,8 +43,8 @@
 }
 
 .section-text {
-    line-height: 25px;
-    margin-bottom: 23px;
+    line-height: 1.67em;
+    margin: 0 0 23px 0;
     opacity: .6;
 }
 
@@ -54,6 +54,13 @@
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 375px;
+    @media (min-width: 700px) {
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: 500px;
+    }
+    @media (min-width: 1280px) {
+        grid-template-columns: repeat(4, 1fr)
+    }
 }
 
 .stories-div {
@@ -62,26 +69,52 @@
     background-size: cover;
     background-position: center;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .mountains-div {
-    background-image: url(/assets/stories/mobile/mountains.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/mobile/mountains.jpg);
+    @media (min-width: 700px) {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/desktop/mountains.jpg);
+    }
 }
 
 .cityscapes-div {
-    background-image: url(/assets/stories/mobile/cityscapes.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/mobile/cityscapes.jpg);
+    @media (min-width: 700px) {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/desktop/cityscapes.jpg);
+    }
 }
 
 .voyage-div {
-    background-image: url(/assets/stories/mobile/18-days-voyage.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/mobile/18-days-voyage.jpg);
+    @media (min-width: 700px) {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/desktop/18-days-voyage.jpg);
+    }
 }
 
 .architecturals-div {
-    background-image: url(/assets/stories/mobile/architecturals.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/mobile/architecturals.jpg);
+    @media (min-width: 700px) {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.27%, rgba(0, 0, 0, 0.661222) 100%), url(/assets/stories/desktop/architecturals.jpg);
+    }
 }
 
 .stories-text-wrapper {
     border-bottom: 1px solid rgba(255, 255, 255, .25);
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    & .small-header {
+        margin-bottom: 4px;
+    }
+}
+
+.stories-info-text {
+    font-size: .87em;
+    line-height: 1.3em;
+    margin: 0;
 }
 
 .stories-call-to-action {
