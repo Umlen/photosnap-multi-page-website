@@ -1,5 +1,7 @@
 import {storiesData} from './stories-data.js';
 
+render();
+
 function render() {
     let storiesElements = ''
     storiesData.map(story => {
@@ -25,5 +27,3 @@ function render() {
     });
     document.querySelector('.stories-wrapper').innerHTML = storiesElements;
 }
-
-render();

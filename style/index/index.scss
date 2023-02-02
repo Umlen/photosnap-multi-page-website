@@ -61,6 +61,7 @@
     color: #ffffff;
     text-decoration: none;
     position: relative;
+    transition: .5s ease-out;
     &:hover,
     &:focus {
         transform: translateY(-20px);
