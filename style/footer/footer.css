@@ -140,9 +140,6 @@
   }
 }
 
-.footer-copyright {
-  opacity: 0.5;
-}
 @media (min-width: 700px) {
   .footer-copyright {
     grid-area: copyright;

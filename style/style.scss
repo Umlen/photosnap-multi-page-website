@@ -43,16 +43,25 @@ body {
     margin: 0;
 }
 
-/*LINKS*/
+.low-opacity-text {
+    opacity: .6;
+}
 
+.smallest-header, /*h4 tag*/
 .link-base-style {
-    text-decoration: none;
+    margin: 0;
     font-size: .8em;
     line-height: 1.25em;
     letter-spacing: 2px;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+/*LINKS*/
+
+.link-base-style {
+    text-decoration: none;
 }
 
 .black-link {
@@ -95,4 +104,16 @@ body {
     @media (min-width: 700px) {
         padding: 12px 0;
     }
+}
+
+/*LAYOUT*/
+
+.black-section {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.white-section {
+    background-color: #ffffff;
+    color: #000000;
 }

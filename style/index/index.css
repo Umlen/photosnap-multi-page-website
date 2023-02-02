@@ -12,19 +12,12 @@
   }
 }
 
-.black-section {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.white-section {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 .section-text-wrapper {
   padding: 72px 33px;
   position: relative;
+}
+.section-text-wrapper .paragraph {
+  margin-bottom: 23px;
 }
 @media (min-width: 700px) {
   .section-text-wrapper {
@@ -46,11 +39,6 @@
     height: 100%;
     width: 6px;
   }
-}
-
-.section-text {
-  margin: 0 0 23px 0;
-  opacity: 0.6;
 }
 
 /*STORIES SECTION*/
@@ -152,15 +140,6 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
-}
-.stories-call-to-action-wrapper p {
-  margin: 0;
-  font-size: 0.8em;
-  line-height: 1.25em;
-  letter-spacing: 2px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 /*INFO SECTION*/
