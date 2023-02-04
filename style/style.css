@@ -10,6 +10,7 @@ html, body {
 
 /*TYPOGRAPHY*/
 body {
+  position: relative;
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
 }

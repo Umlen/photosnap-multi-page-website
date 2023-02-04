@@ -13,6 +13,8 @@
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
+  <input type="radio" name="mobile-menu-btns" id="open-mobile-menu">
+  <input type="radio" name="mobile-menu-btns" id="close-mobile-menu">
   <header class="header">
     <a href="../index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
@@ -29,8 +31,6 @@
         </g>
       </svg>
     </a>
-    <input type="radio" name="mobile-menu-btns" id="open-mobile-menu">
-    <input type="radio" name="mobile-menu-btns" id="close-mobile-menu">
     <label for="open-mobile-menu" id="open-mobile-menu-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="6">
         <g fill-rule="evenodd">
@@ -58,7 +58,7 @@
       <a href="#" class="btn-base-style black-btn link-base-style header-nav-btn">Get an invite</a>
     </nav>
   </header>
-
+  <div class="blackout"><!--Dysplay when mobile menu opens--></div>
   <main>
     <section class="black-section section-container">
       <img 
@@ -80,17 +80,27 @@
       </div>
     </section>
 
-    <div class="toggler">Monthly Yearly</div>
+    <div class="toggler-wrapper">
+      <p class="small-header" id="toggler-monthly">Monthly</p>
+        <div class="toggler">
+          <input type="checkbox" name="plan-price-toggler" class="toggler-checkbox">
+          <div class="toggler-slider"></div>
+        </div> 
+      <p class="small-header low-opacity-text" id="toggler-yearly">Yearly</p>
+    </div>
     <div class="plans-container">
       <div class="gray-section plan">
         <h2 class="medium-header">Basic</h2>
         <p class="paragraph low-opacity-text">
           Includes basic usage of our platform. Recommended for new and aspiring photographers.
         </p>
-        <div class="plan-price-wrapper">
+        <div class="plan-price-wrapper monthly-price">
           <h2 class="big-header">$19.00</h2>
           <p class="paragraph low-opacity-text">per month</p>
-          <!--<h2 class="big-header">$190.00 per year</h2>-->
+        </div>
+        <div class="plan-price-wrapper yearly-price">
+          <h2 class="big-header">$190.00</h2>
+          <p class="paragraph low-opacity-text">per year</p>
         </div>
         <a href="#" class="btn-base-style black-btn pick-plan-btn link-base-style">Pick Plan</a>
       </div>
@@ -99,10 +109,13 @@
         <p class="paragraph low-opacity-text">
           More advanced features available. Recommended for photography veterans and professionals.
         </p>
-        <div class="plan-price-wrapper">
+        <div class="plan-price-wrapper monthly-price">
           <h2 class="big-header">$39.00</h2>
           <p class="paragraph low-opacity-text">per month</p>
-          <!--<h2 class="big-header">$390.00 per year</h2>-->
+        </div>
+        <div class="plan-price-wrapper yearly-price">
+          <h2 class="big-header">$390.00</h2>
+          <p class="paragraph low-opacity-text">per year</p>
         </div>
         <a href="#" class="btn-base-style white-btn pick-plan-btn link-base-style">Pick Plan</a>
       </div>
@@ -111,10 +124,13 @@
         <p class="paragraph low-opacity-text">
           Additional features available such as more detailed metrics. Recommended for business owners.         
         </p>
-        <div class="plan-price-wrapper">
+        <div class="plan-price-wrapper monthly-price">
           <h2 class="big-header">$99.00</h2>
           <p class="paragraph low-opacity-text">per month</p>
-          <!--<h2 class="big-header">$990.00 per year</h2>-->
+        </div>
+        <div class="plan-price-wrapper yearly-price">
+          <h2 class="big-header">$999.00</h2>
+          <p class="paragraph low-opacity-text">per year</p>
         </div>
         <a href="#" class="btn-base-style black-btn pick-plan-btn link-base-style">Pick Plan</a>
       </div>
@@ -515,5 +531,6 @@
     </a>
     <p class="paragraph footer-copyright low-opacity-text">Copyright 2019. All Rights Reserved</p>
   </footer>
+  <script src="../script/price.js"></script>
 </body>
 </html>

@@ -13,6 +13,8 @@
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
+  <input type="radio" name="mobile-menu-btns" id="open-mobile-menu">
+  <input type="radio" name="mobile-menu-btns" id="close-mobile-menu">
   <header class="header">
     <a href="../index.html">
       <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
@@ -29,8 +31,6 @@
         </g>
       </svg>
     </a>
-    <input type="radio" name="mobile-menu-btns" id="open-mobile-menu">
-    <input type="radio" name="mobile-menu-btns" id="close-mobile-menu">
     <label for="open-mobile-menu" id="open-mobile-menu-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="6">
         <g fill-rule="evenodd">
@@ -58,6 +58,7 @@
       <a href="#" class="btn-base-style black-btn link-base-style header-nav-btn">Get an invite</a>
     </nav>
   </header>
+  <div class="blackout"><!--Dysplay when mobile menu opens--></div>
   <main>
     <section class="top-story">
       <img 
