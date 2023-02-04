@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/footer/footer.css">
   <link rel="stylesheet" href="../style/header/header.css">
+  <link rel="stylesheet" href="../style/pricing/pricing.css">
 
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
@@ -54,56 +55,102 @@
           <a href="./pricing.html" class="link-base-style black-link menu-link">Pricing</a>
         </li>
       </ul>
-      <a href="#" class="black-btn link-base-style header-nav-btn">Get an invite</a>
+      <a href="#" class="btn-base-style black-btn link-base-style header-nav-btn">Get an invite</a>
     </nav>
   </header>
 
-  Pricing
+  <main>
+    <section class="black-section section-container">
+      <img 
+        src="/assets/pricing/desktop/hero.jpg" alt="a woman takes a photo"
+        srcset="/assets/pricing/mobile/hero.jpg 375w,
+                /assets/pricing/tablet/hero.jpg 273w,
+                /assets/pricing/desktop/hero.jpg 830w"
+        sizes="(min-width: 1280px) 830px,
+               (min-width: 700px) 273px,
+               100vw"
+      >
+      <div class="section-text-wrapper">
+        <div class="gradient-div"></div>
+        <h1 class="big-header">Pricing</h1>
+        <p class="paragraph low-opacity-text">
+          Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
+          It’s the simple way to create and share your photos.
+        </p>
+      </div>
+    </section>
 
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
+    <div class="toggler">Monthly Yearly</div>
+    <div class="plans-container">
+      <div class="gray-section plan">
+        <h2 class="medium-header">Basic</h2>
+        <p class="paragraph low-opacity-text">
+          Includes basic usage of our platform. Recommended for new and aspiring photographers.
+        </p>
+        <div class="plan-price-wrapper">
+          <h2 class="big-header">$19.00</h2>
+          <p class="paragraph low-opacity-text">per month</p>
+          <!--<h2 class="big-header">$190.00 per year</h2>-->
+        </div>
+        <a href="#" class="btn-base-style black-btn pick-plan-btn link-base-style">Pick Plan</a>
+      </div>
+      <div class="black-section plan plan-gradient-border">
+        <h2 class="medium-header">Pro</h2>
+        <p class="paragraph low-opacity-text">
+          More advanced features available. Recommended for photography veterans and professionals.
+        </p>
+        <div class="plan-price-wrapper">
+          <h2 class="big-header">$39.00</h2>
+          <p class="paragraph low-opacity-text">per month</p>
+          <!--<h2 class="big-header">$390.00 per year</h2>-->
+        </div>
+        <a href="#" class="btn-base-style white-btn pick-plan-btn link-base-style">Pick Plan</a>
+      </div>
+      <div class="gray-section plan">
+        <h2 class="medium-header">Business</h2>
+        <p class="paragraph low-opacity-text">
+          Additional features available such as more detailed metrics. Recommended for business owners.         
+        </p>
+        <div class="plan-price-wrapper">
+          <h2 class="big-header">$99.00</h2>
+          <p class="paragraph low-opacity-text">per month</p>
+          <!--<h2 class="big-header">$990.00 per year</h2>-->
+        </div>
+        <a href="#" class="btn-base-style black-btn pick-plan-btn link-base-style">Pick Plan</a>
+      </div>
+    </div>
+    <div class="beta-invite">
+      <div class="gradient-div"></div>
+      <h2 class="big-header">We're in Beta. Get your invite today!</h2>
+      <a href="#" class="call-to-action-link link-base-style">
+        <p>Get an invite</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+          <g fill="none" fill-rule="evenodd" stroke="#fff">
+            <path d="M0 7h41.864M35.428 1l6 6-6 6"/>
+          </g>
+        </svg>
+      </a>
+    </div>
+  </main>
 
-  Monthly
-  Yearly
+  <!--
+    Compare
 
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
+    The Features
 
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
+    Basic
+    Pro
+    Business
 
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
-  
-  Get an invite
+    Unlimited Story Posting
+    Unlimited Photo Upload
+    Embedding Custom Content
+    Customize Metadata
+    Advanced Metrics
+    Photo Downloads
+    Search Engine Indexing
+    Custom Analytics
+  -->
 
   <footer class="footer">
     <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16" class="footer-logo">

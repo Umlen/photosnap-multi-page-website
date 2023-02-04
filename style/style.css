@@ -15,6 +15,7 @@ body {
 }
 
 .big-header,
+.medium-header,
 .small-header {
   font-weight: 700;
   margin: 0 0 16px 0;
@@ -31,6 +32,11 @@ body {
     font-size: 2.67em;
     letter-spacing: 4.17px;
   }
+}
+
+.medium-header {
+  font-size: 1.6em;
+  line-height: 1.67em;
 }
 
 .small-header {
@@ -89,19 +95,30 @@ body {
 }
 
 /*BUTTONS*/
-.black-btn {
-  background-color: #000000;
-  padding: 14px 0;
+.btn-base-style {
   cursor: pointer;
+  padding: 14px 0;
+  display: inline-block;
+  text-align: center;
 }
-.black-btn:hover, .black-btn:focus {
+.btn-base-style:hover, .btn-base-style:focus {
   background-color: #dfdfdf;
   color: #000000;
 }
 @media (min-width: 700px) {
-  .black-btn {
+  .btn-base-style {
     padding: 12px 0;
   }
+}
+
+.black-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.white-btn {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /*LAYOUT*/
@@ -110,7 +127,28 @@ body {
   color: #ffffff;
 }
 
+.gray-section {
+  background-color: #F5F5F5;
+  color: #000000;
+}
+
 .white-section {
   background-color: #ffffff;
   color: #000000;
+}
+
+.gradient-div {
+  position: absolute;
+  top: 0;
+  left: 33px;
+  height: 6px;
+  width: 128px;
+  background-image: linear-gradient(1deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+}
+@media (min-width: 700px) {
+  .gradient-div {
+    left: 0;
+    height: 100%;
+    width: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */

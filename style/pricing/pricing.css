@@ -1,0 +1,156 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+@media (min-width: 700px) {
+  .section-container {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 112px;
+  }
+}
+@media (min-width: 1280px) {
+  .section-container {
+    margin-bottom: 120px;
+  }
+}
+
+.section-text-wrapper {
+  padding: 72px 33px;
+  position: relative;
+}
+@media (min-width: 700px) {
+  .section-text-wrapper {
+    padding: 0 54px;
+  }
+}
+
+/*Toggler*/
+.toggler {
+  margin-bottom: 40px;
+}
+@media (min-width: 1280px) {
+  .toggler {
+    margin-bottom: 48px;
+  }
+}
+
+/*Plans*/
+.plans-container {
+  padding: 0 33px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (min-width: 1280px) {
+  .plans-container {
+    flex-direction: row;
+    gap: 30px;
+    padding: 0 165px;
+    margin-bottom: 160px;
+  }
+}
+
+.plan {
+  padding: 56px 22px 40px;
+  text-align: center;
+}
+.plan .big-header {
+  margin-bottom: 0;
+}
+.plan .paragraph {
+  margin-bottom: 40px;
+}
+@media (min-width: 700px) and (max-width: 1280px) {
+  .plan {
+    text-align: left;
+    padding: 40px 48px 40px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title price" "description price" "button price";
+  }
+  .plan .medium-header {
+    grid-area: title;
+    margin-bottom: 18px;
+  }
+  .plan > .paragraph {
+    grid-area: description;
+    margin-bottom: 32px;
+  }
+  .plan .pick-plan-btn {
+    grid-area: button;
+  }
+  .plan .plan-price-wrapper {
+    text-align: right;
+    grid-area: price;
+  }
+}
+@media (min-width: 1280px) {
+  .plan {
+    padding: 56px 40px 40px;
+  }
+}
+
+.plan-gradient-border {
+  position: relative;
+}
+.plan-gradient-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-image: linear-gradient(1deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+}
+@media (min-width: 700px) and (max-width: 1280px) {
+  .plan-gradient-border::after {
+    width: 6px;
+    height: 100%;
+    background-image: linear-gradient(88deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+  }
+}
+@media (min-width: 1280px) {
+  .plan-gradient-border {
+    transform: scale(1.1);
+  }
+}
+
+.pick-plan-btn {
+  width: 245px;
+  max-width: 100%;
+}
+
+/*Beta invite*/
+.beta-invite {
+  position: relative;
+  padding: 64px 33px;
+  color: #ffffff;
+  background-image: url(/assets/shared/mobile/bg-beta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.beta-invite .big-header {
+  margin-bottom: 24px;
+}
+@media (min-width: 700px) {
+  .beta-invite {
+    padding: 68px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/assets/shared/tablet/bg-beta.jpg);
+  }
+  .beta-invite .big-header {
+    margin-bottom: 0;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1280px) {
+  .beta-invite {
+    padding: 68px 165px;
+    background-image: url(/assets/shared/desktop/bg-beta.jpg);
+  }
+}/*# sourceMappingURL=pricing.css.map */

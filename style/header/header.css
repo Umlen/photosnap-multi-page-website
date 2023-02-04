@@ -86,8 +86,6 @@
 }
 
 .header-nav-btn {
-  display: inline-block;
-  text-align: center;
   width: 100%;
 }
 @media (min-width: 700px) {
