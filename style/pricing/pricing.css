@@ -1,28 +1,15 @@
-.section-container {
-  display: flex;
-  flex-direction: column;
+.section-container-pricing {
   margin-bottom: 64px;
 }
-@media (min-width: 700px) {
-  .section-container {
+@media (min-width: 500px) {
+  .section-container-pricing {
     flex-direction: row-reverse;
-    align-items: center;
     margin-bottom: 112px;
   }
 }
 @media (min-width: 1280px) {
-  .section-container {
+  .section-container-pricing {
     margin-bottom: 120px;
-  }
-}
-
-.section-text-wrapper {
-  padding: 72px 33px;
-  position: relative;
-}
-@media (min-width: 700px) {
-  .section-text-wrapper {
-    padding: 0 54px;
   }
 }
 

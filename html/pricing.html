@@ -60,17 +60,13 @@
   </header>
   <div class="blackout"><!--Dysplay when mobile menu opens--></div>
   <main>
-    <section class="black-section section-container">
-      <img 
-        src="/assets/pricing/desktop/hero.jpg" alt="a woman takes a photo"
-        srcset="/assets/pricing/mobile/hero.jpg 375w,
-                /assets/pricing/tablet/hero.jpg 273w,
-                /assets/pricing/desktop/hero.jpg 830w"
-        sizes="(min-width: 1280px) 830px,
-               (min-width: 700px) 273px,
-               100vw"
-      >
-      <div class="section-text-wrapper">
+    <section class="black-section section-container-base section-container-pricing">
+      <picture class="section-container-picture">
+        <source media="(max-width: 499px)" srcset="/assets/pricing/mobile/hero.jpg">
+        <source media="(max-width: 1279px)" srcset="/assets/pricing/tablet/hero.jpg">
+        <img src="/assets/pricing/desktop/hero.jpg" alt="a woman takes a photo">
+      </picture>
+      <div class="section-text-wrapper-base">
         <div class="gradient-div"></div>
         <h1 class="big-header">Pricing</h1>
         <p class="paragraph low-opacity-text">
@@ -139,33 +135,10 @@
     <div class="compare-container">
       <table class="compare-table compare-table-mobile">
         <tr class="compare-table-firts-row">
-          <th class="smallest-header">The Features</th>
+          <th colspan="3" class="smallest-header">The Features</th>
         </tr>
         <tr>
-          <th class="smallest-header">Unlimited Story Posting</th>
-        </tr>
-        <tr>
-          <td>
-            <p class="paragraph low-opacity-text">Basic</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
-              <path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/>
-            </svg>
-          </td>
-          <td>
-            <p class="paragraph low-opacity-text">Pro</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
-              <path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/>
-            </svg>
-          </td>
-          <td>
-            <p class="paragraph low-opacity-text">Business</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
-              <path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/>
-            </svg>
-          </td>
-        </tr>
-        <tr>
-          <th class="smallest-header">Unlimited Photo Upload</th>
+          <th colspan="3" class="smallest-header">Unlimited Story Posting</th>
         </tr>
         <tr>
           <td>
@@ -188,7 +161,30 @@
           </td>
         </tr>
         <tr>
-          <th class="smallest-header">Embedding Custom Content</th>
+          <th colspan="3" class="smallest-header">Unlimited Photo Upload</th>
+        </tr>
+        <tr>
+          <td>
+            <p class="paragraph low-opacity-text">Basic</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
+              <path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/>
+            </svg>
+          </td>
+          <td>
+            <p class="paragraph low-opacity-text">Pro</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
+              <path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/>
+            </svg>
+          </td>
+          <td>
+            <p class="paragraph low-opacity-text">Business</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
+              <path fill="none" stroke="#000" stroke-width="2" d="M1 8.124L5.623 13 17 1"/>
+            </svg>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="3" class="smallest-header">Embedding Custom Content</th>
         </tr>
         <tr>
           <td>
@@ -208,7 +204,7 @@
           </td>
         </tr>
         <tr>
-          <th class="smallest-header">Customize Metadata</th>
+          <th colspan="3" class="smallest-header">Customize Metadata</th>
         </tr>
         <tr>
           <td>
@@ -228,7 +224,7 @@
           </td>
         </tr>
         <tr>
-          <th class="smallest-header">Advanced Metrics</th>
+          <th colspan="3" class="smallest-header">Advanced Metrics</th>
         </tr>
         <tr>
           <td>
@@ -245,7 +241,7 @@
           </td>
         </tr>
         <tr>
-          <th class="smallest-header">Photo Downloads</th>
+          <th colspan="3" class="smallest-header">Photo Downloads</th>
         </tr>
         <tr>
           <td>
@@ -262,7 +258,7 @@
           </td>
         </tr>
         <tr>
-          <th class="smallest-header">Search Engine Indexing</th>
+          <th colspan="3" class="smallest-header">Search Engine Indexing</th>
         </tr>
         <tr>
           <td>
@@ -279,7 +275,7 @@
           </td>
         </tr>
         <tr>
-          <th class="smallest-header">Custom Analytics</th>
+          <th colspan="3" class="smallest-header">Custom Analytics</th>
         </tr>
         <tr>
           <td>
@@ -425,25 +421,6 @@
       </a>
     </div>
   </main>
-
-  <!--
-    
-
-    
-
-    Basic
-    Pro
-    Business
-
-    Unlimited Story Posting
-    Unlimited Photo Upload
-    Embedding Custom Content
-    Customize Metadata
-    Advanced Metrics
-    Photo Downloads
-    Search Engine Indexing
-    Custom Analytics
-  -->
 
   <footer class="footer">
     <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16" class="footer-logo">

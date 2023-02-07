@@ -31,8 +31,6 @@
         </g>
       </svg>
     </a>
-    <input type="radio" name="mobile-menu-btns" id="open-mobile-menu">
-    <input type="radio" name="mobile-menu-btns" id="close-mobile-menu">
     <label for="open-mobile-menu" id="open-mobile-menu-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="6">
         <g fill-rule="evenodd">
@@ -62,17 +60,13 @@
   </header>
   <div class="blackout"><!--Dysplay when mobile menu opens--></div>
   <main>
-    <section class="black-section section-container">
-      <img 
-        src="/assets/features/desktop/hero.jpg" alt="a man holds a camera"
-        srcset="/assets/features/mobile/hero.jpg 375w,
-                /assets/features/tablet/hero.jpg 273w,
-                /assets/features/desktop/hero.jpg 830w"
-        sizes="(min-width: 1280px) 830px,
-               (min-width: 700px) 273px,
-               100vw"
-      >
-      <div class="section-text-wrapper">
+    <section class="black-section section-container-base">
+      <picture class="section-container-picture">
+        <source media="(max-width: 499px)" srcset="/assets/features/mobile/hero.jpg">
+        <source media="(max-width: 1279px)" srcset="/assets/features/tablet/hero.jpg">
+        <img src="/assets/features/desktop/hero.jpg" alt="a man holds a camera">
+      </picture>
+      <div class="section-text-wrapper-base">
         <div class="gradient-div"></div>
         <h1 class="big-header">Features</h1>
         <p class="paragraph low-opacity-text">

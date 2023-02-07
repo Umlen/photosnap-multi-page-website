@@ -1,22 +1,11 @@
-.section-container {
-    display: flex;
-    flex-direction: column;
+.section-container-pricing {
     margin-bottom: 64px;
-    @media (min-width: 700px) {
+    @media (min-width: 500px) {
         flex-direction: row-reverse;
-        align-items: center;
         margin-bottom: 112px;
     }
     @media (min-width: 1280px) {
         margin-bottom: 120px;
-    }
-}
-
-.section-text-wrapper {
-    padding: 72px 33px;
-    position: relative;
-    @media (min-width: 700px) {
-        padding: 0 54px;
     }
 }
 
