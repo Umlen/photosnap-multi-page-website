@@ -26,7 +26,7 @@
 
 @media (min-width: 700px) {
   #open-mobile-menu-icon,
-#close-mobile-menu-icon {
+  #close-mobile-menu-icon {
     display: none;
   }
 }
