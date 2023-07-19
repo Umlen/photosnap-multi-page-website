@@ -1,6 +1,6 @@
-# Frontend Mentor - Photosnap Website solution
+# Photosnap Website
 
-This is a solution to the [Photosnap Website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a multi-page website. This website was made with a mobile first approach. It uses JavaScript for rendering users' stories and for toggle monthly/yearly pay plans.
 
 ## Table of contents
 
@@ -8,7 +8,6 @@ This is a solution to the [Photosnap Website challenge on Frontend Mentor](https
   - [The challenge](#the-challenge)
   - [Screenshots](#screenshots)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -34,8 +33,6 @@ Users should be able to:
 
 - Solution URL: https://github.com/Umlen/photosnap-multi-page-website
 - Live Site URL: https://chimerical-narwhal-04b2a7.netlify.app/
-
-## My process
 
 ### Built with
 
