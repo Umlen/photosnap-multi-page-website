@@ -25,14 +25,11 @@ Users should be able to:
 ![](./screenshots/laptop.png)
 ![](./screenshots/tablet.png)
 ![](./screenshots/mobile.png)
-![](./screenshots/laptop-stories.png)
-![](./screenshots/tablet-features.png)
-![](./screenshots/mobile-pricing.png)
 
 ### Links
 
 - Solution URL: https://github.com/Umlen/photosnap-multi-page-website
-- Live Site URL: https://chimerical-narwhal-04b2a7.netlify.app/
+- Live Site URL: https://photosnapwebsite.netlify.app/
 
 ### Built with
 
